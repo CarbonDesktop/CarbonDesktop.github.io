@@ -1,9 +1,69 @@
 .background {
-  height: 100vh;
+  height: 100vh; /* Full size div */
   width: 100vw;
-  background: url("img/bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
+  background: url("img/bg.jpg") no-repeat center center fixed; /* Page background */
+  -webkit-background-size: cover; /* Fullsize background of page */
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.navbar-default {
+  background-color: transparent; /* Navbar background */
+  border-color: transparent; /* Navbar Underline */
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #B02A0D; /* Hover and Focus of Navbar Items */
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+  color: #000; /* Navbar font color */
+  transition: all 0.1s ease; /* Smooth transition for navbar font hover */
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+}
+
+.dropdown-menu > li > a {
+  color: #FFF; /* font-color of dropdown-links */
+  border-left: 3px solid transparent;
+  transition: all 0.1s ease; /* Smooth transition for dropdown link hover */
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+}
+
+.dropdown-menu .divider {
+  background-color: #555; /* Color of Divider in dropdown-menu */
+}
+
+.dropdown-menu > li {
+  background-color: #333333; /* Background color of dropdown elements */
+}
+
+.dropdown-menu {
+  background-color: #333333; /* Background of dropdown list (without items) */
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li a:focus {
+  color: #B02A0D;
+  border-left: 3px solid #B02A0D;
+  background-color: #333333;
+}
+
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a {
+  background-color: #333333; /* background of opened dropdown-menu */
+  color: #FFF
+}
+
+.dropdown-menu {
+  margin: -1px !important;
+  border: none !important;
+  box-shadow: none !important;
 }
